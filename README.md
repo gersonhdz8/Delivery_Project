@@ -1,13 +1,13 @@
-# Rappi Campus 🛵🌮
+# Delivery app 🛵🌮
 
 ## Instalacion y uso
-Para hacer uso de **Rappi Campus**  se debe tener instalado [GIT](https://git-scm.com/), [Node.js](https://nodejs.org/es/)
+Para hacer uso se debe tener instalado [GIT](https://git-scm.com/), [Node.js](https://nodejs.org/es/)
 
 > Nota: El proyecto hace uso de la version de nodejs v18.17.0
 
 ### Clonar el repositorio
 ```bash
-git clone https://github.com/Kevin2606/rappi_campus.git
+git clone https://github.com/gersonhdz8/Delivery_Project.git
 ```
 > Una vez clonado el repositorio accede a la carpeteta del proyecto
 ### Instalar dependencias
@@ -28,7 +28,7 @@ Agregar las siguientes variables de entorno
 ATLAS_USER="root"
 ATLAS_PASSWORD=""
 ATLAS_CLUSTER=""
-ATLAS_DB="db_rappi_campus"
+ATLAS_DB="db_delivery"
 JWT_SECRET="secret"
 PORT=3000
 ```
@@ -209,30 +209,7 @@ http://localhost:3000/productos
 | PUT     | `/update/:id`                      | Actualizar la información de un producto por su ID   |
 
 
-### Modelo Base de Datos
-
-![Modelo Base de Datos](src/img/image.png)
-
-La investigacion realizada sobre Rappi y otros se encuentra en el siguiente [enlace](investigacion/README.md)
-
-### Roadmap - Tareas pendientes
-Se plantea la siguiente lista de tareas pendientes para el proyecto:
-
-- [ ] Que el restaurante pueda editar y eliminar productos que el mismo creo. (Ningún otro restaurante debería poder modificar los productos de otros restaurantes)
-- [ ] Que solo se puedan ver los pedidos que le interesen al usuario, por ejemplo:
-    - Si soy cliente solo deseo ver mis pedidos
-    - Si soy repartidor solo deseo ver los pedidos en los que participe
-    - Si soy restaurante solo deseo ver los pedidos que vendi
-
-- [ ] Cómo usuarios de la aplicación, que solo puedan ellos actualizar y eliminar sus propios datos
-
-- [ ] Eliminar las consultas que se consideren innecesarias
-- [ ] Implementar verificacion del body en el controller
-
-
-
 
 ## Autor
 
-- Kevin Gallardo - [@Kevin2606](https://github.com/Kevin2606)
 - Gerson Hernandez - [@GersonHdz](https://github.com/gersonhdz8)
